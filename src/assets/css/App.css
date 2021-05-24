@@ -1,0 +1,9 @@
+:root {
+  --green: #9ade2c;
+  --blue: #0d2a4f;
+  --green-blur: rgb(154, 222, 59, 0.55);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}

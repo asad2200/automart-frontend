@@ -1,0 +1,9 @@
+.btnc {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.btnc:hover {
+  background-color: var(--green);
+  color: var(--blue);
+}

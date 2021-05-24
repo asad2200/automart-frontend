@@ -1,0 +1,39 @@
+/* ------------------------------- NavBar ------------------------------- */
+.logo-1 {
+  background-color: #e1e1e1;
+  color: var(--green);
+  border: 1px solid var(--green);
+  padding: 0 2px 0 2px;
+  display: inline-block;
+  border-right: none;
+}
+.logo-2 {
+  background-color: var(--blue);
+  border: 1px solid var(--green);
+  border-left: none;
+  padding: 0 2px 0 2px;
+  display: inline-block;
+}
+#nobg {
+  background: transparent !important;
+}
+#bg {
+  background: var(--blue) !important;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: none;
+}
+
+.navbar-dark .navbar-toggler {
+  font-weight: 800;
+  color: var(--green) !important;
+  border-color: var(--green) !important;
+}
+
+.nav-link {
+  color: var(--green-blur) !important;
+}
+
+.active {
+  color: var(--green) !important;
+}

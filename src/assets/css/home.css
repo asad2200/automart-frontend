@@ -1,0 +1,51 @@
+/* ------------------------------- Body ------------------------------- */
+/* ------------------------------- Hero ------------------------------- */
+
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../hero.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -200px;
+}
+.hero-section .hero-section-text {
+  color: #e1e1e1;
+  margin: 2px;
+  /* text-shadow: 1px 1px 2px #000; */
+}
+
+.hero-green {
+  color: var(--green);
+}
+
+/* ------------------------------- Category ------------------------------- */
+.cardm {
+  background: var(--blue);
+  color: white;
+}
+.card img {
+  height: 200px;
+  display: block;
+  filter: brightness(50%);
+}
+
+/* ------------------------------- Category ------------------------------- */
+footer {
+  background: var(--blue);
+  color: #e1e1e1;
+}
+
+footer div h5 {
+  margin-left: 25px;
+}
+.license-container {
+  background: rgb(13, 42, 79);
+  color: #e1e1e1;
+}
+.license {
+  background: rgb(0, 0, 0, 0.5);
+}
