@@ -24,16 +24,18 @@ function Glass() {
     const loadGlass = (cid, mid) => {
         getGlass(cid, mid)
             .then((data) => {
-                setItems(data.results);
+                setItems(data);
             });
     }
 
     const loadSearchGlass = (carname) => {
-
-        getSearchGlass(carname)
-            .then((data) => {
-                setItems(data.results);
-            });
+        if (carname !== '')
+            getSearchGlass(carname)
+                .then((data) => {
+                    setItems(data);
+                });
+        else
+            setItems([])
     }
 
     return (

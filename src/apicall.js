@@ -42,3 +42,19 @@ export const getSearchGlass = (carname) => {
         })
         .catch((err) => console.log(err));
 };
+
+export const getItemsByCar = (carname) => {
+    return fetch(`${url}/autoparts/items/?car=${carname}`)
+        .then((response) => {
+            return response.json();
+        })
+        .catch((err) => console.log(err));
+};
+
+export const getItemsByName = (itemname) => {
+    return fetch(`${url}/autoparts/items/?item=${itemname}`)
+        .then((response) => {
+            return response.json();
+        })
+        .catch((err) => console.log(err));
+};
