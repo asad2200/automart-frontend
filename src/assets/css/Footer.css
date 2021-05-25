@@ -1,0 +1,16 @@
+/* ------------------------------- Footer ------------------------------- */
+footer {
+  background: var(--blue);
+  color: #e1e1e1;
+}
+
+footer div h5 {
+  margin-left: 25px;
+}
+.license-container {
+  background: rgb(13, 42, 79);
+  color: #e1e1e1;
+}
+.license {
+  background: rgb(0, 0, 0, 0.5);
+}

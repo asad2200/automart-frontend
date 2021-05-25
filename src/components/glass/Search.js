@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
-function Search() {
+function Search({ loadSearchGlass }) {
+    const [carname, setCarname] = useState('')
     return (
-        <div className="row glass m-3">
+        <div className="row m-3">
             <div className="d-inline-flex">
-                <input type="text" className="form-control" placeholder="Enter Car Name" ></input>
-                <div className="btn btn-primary btnc">Search </div>
+                <input type="text" className="form-control" placeholder="Enter Car Name" value={carname} onChange={(e) => {
+                    setCarname(e.target.value);
+                }}></input>
+                <button className="btn btn-primary btnc" onClick={() => loadSearchGlass(carname)}>Search </button>
             </div>
-        </div>
+        </div >
     )
 }
 

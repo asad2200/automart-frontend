@@ -2,10 +2,11 @@ import React from 'react'
 import { TiLocation } from "react-icons/ti";
 import { MdMail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
-
+import '../assets/css/Footer.css'
+import { Link } from 'react-router-dom';
 function Footer() {
     return (
-        <>
+        <div className='footer sticky-bottom'>
             <footer className="p-3 text-center" id="contact">
                 <h3 className="text-uppercase fw-bold mb-4">
                     Contact
@@ -17,10 +18,10 @@ function Footer() {
             </footer >
             <div className="license-container">
                 <div className="license text-center p-4">
-                    © 2021 Copyright: <a className="text-reset fw-bold" href="#home">Auto Mart</a>
+                    © 2021 Copyright: <Link className="text-reset fw-bold" to="/">Auto Mart</Link>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

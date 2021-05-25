@@ -12,8 +12,8 @@ function Category() {
                         <img className="card-img-top" src={hero} alt="card thumbnail" />
                         <div className="card-body">
                             <h5 className="card-title"><span className="hero-green">Auto</span> Parts</h5>
-                            <p className="card-text">All kind of Auto Partsand Accessories.</p>
-                            <a href="#" className="btn btn-outline-light">Check Here</a>
+                            <p className="card-text">All kind of Auto Parts and Accessories.</p>
+                            <Link to="auto-parts" className="btn btn-outline-light">Check Here</Link>
                         </div>
                     </div>
                 </div>
@@ -33,7 +33,7 @@ function Category() {
                         <div className="card-body">
                             <h5 className="card-title"><span className="hero-green">Auto</span> Colour</h5>
                             <p className="card-text">All Kind of auto colour and computer color.</p>
-                            <a href="#" className="btn btn-outline-light">Check Here</a>
+                            <Link to="colour" className="btn btn-outline-light">Check Here</Link>
                         </div>
                     </div>
                 </div>

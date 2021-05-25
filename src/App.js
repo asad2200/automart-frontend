@@ -5,16 +5,23 @@ import {
   Route,
 
 } from "react-router-dom";
-import home from './pages/home';
-import glass from './pages/glass';
+import Home from './pages/Home';
+import Glass from './pages/Glass';
+import AutoParts from './pages/AutoParts';
+import Color from './pages/Color';
+import Footer from './components/Footer';
 
 function App() {
+
   return (
     <Router>
       <Switch>
-        <Route path="/" exact component={home} />
-        <Route path="/glass" component={glass} />
+        <Route path="/" exact component={Home} />
+        <Route path="/glass" component={Glass} />
+        <Route path="/auto-parts" component={AutoParts} />
+        <Route path="/colour" component={Color} />
       </Switch>
+      <Footer />
     </Router>
   );
 }
