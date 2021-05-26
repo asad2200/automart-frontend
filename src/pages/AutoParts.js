@@ -10,13 +10,13 @@ function AutoParts() {
     const loadItemsByCar = (carname) => {
         getItemsByCar(carname)
             .then((data) => {
-                setItems(data.results);
+                setItems(data);
             });
     }
     const loadItemsByName = (itemname) => {
         getItemsByName(itemname)
             .then((data) => {
-                setItems(data.results);
+                setItems(data);
             });
     }
 
