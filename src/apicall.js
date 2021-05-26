@@ -44,7 +44,8 @@ export const getSearchGlass = (carname) => {
 };
 
 export const getItemsByCar = (carname) => {
-    return fetch(`${url}/autoparts/items/?car=${carname}`)
+    nurl = `${url}/autoparts/items/?car=${carname}`
+    return fetch(nurl)
         .then((response) => {
             return response.json();
         })
@@ -52,7 +53,8 @@ export const getItemsByCar = (carname) => {
 };
 
 export const getItemsByName = (itemname) => {
-    return fetch(`${url}/autoparts/items/?item=${itemname}`)
+    nurl = `${url}/autoparts/items/?item=${itemname}`
+    return fetch(nurl)
         .then((response) => {
             return response.json();
         })

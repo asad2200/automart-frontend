@@ -23,7 +23,6 @@ function AutoParts() {
     const searchItems = (e) => {
         var baseSearch = document.getElementById("search").value
         var name = e.target.value
-        console.log(name)
         if (name === '')
             setItems([])
         else if (baseSearch === "1")
